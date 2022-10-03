@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title></title>
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-1">
+      <div class="rectangels-div">
+        <div class="rectangle-div"></div>
+        <div class="rectangle-div1"></div>
+        <div class="rectangle-div2"></div>
+        <div class="rectangle-div3"></div>
+        <div class="rectangle-div4"></div>
+        <div class="rectangle-div5"></div>
+        <div class="rectangle-div6"></div>
+        <div class="rectangle-div7"></div>
+        <div class="rectangle-div8"></div>
+        <div class="rectangle-div9"></div>
+        <div class="rectangle-div10"></div>
+        <div class="rectangle-div11"></div>
+        <div class="rectangle-div12"></div>
+        <div class="rectangle-div13"></div>
+      </div>
+      <img class="rectangle-icon" alt="" src="public/rectangle-1@2x.png" />
+      <div class="im-div">I’m</div>
+      <b class="pnar-suszer-b">Pınar Susüzer</b>
+      <div class="ui-designer-div">UI Designer</div>
+      <div class="voyadigital-div">@voya.digital</div>
+      <div class="and-div">and</div>
+      <div class="freelancer-div">Freelancer</div>
+      <a
+        class="pinarsusuzergmailcom"
+        href="mailto:pinarsusuzer@gmail.com?subject=Hello"
+        >pinarsusuzer@gmail.com</a
+      ><button
+        class="twitter-1-button"
+        autofocus
+        id="twitter1Button"
+        data-animate-on-scroll
+      >
+        <img class="layer-2-icon" alt="" src="public/layer-2.svg" />
+      </button>
+    </div>
+
+    <script>
+      var twitter1Button = document.getElementById("twitter1Button");
+      if (twitter1Button) {
+        twitter1Button.addEventListener("click", function () {
+          window.open("https://twitter.com/karakaspnar");
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

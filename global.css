@@ -1,0 +1,14 @@
+:root {
+  /* fonts */
+  --font-jetbrains-mono: "JetBrains Mono";
+
+  /* font sizes */
+  --font-size-base: 20px;
+  --font-size-lg: 28px;
+
+  /* Colors */
+  --color-indigo-100: #2b2e68;
+  --color-violet-100: #a1a5ee;
+  --color-violet-200: #8f93e4;
+  --color-pink: #c4c5fb;
+}

@@ -1,0 +1,221 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+.rectangle-div,
+.rectangle-div1,
+.rectangle-div2,
+.rectangle-div3 {
+  position: absolute;
+  top: 37px;
+  left: 0;
+  background-color: var(--color-violet-100);
+  width: 78px;
+  height: 78px;
+  opacity: 0.9;
+}
+.rectangle-div1,
+.rectangle-div2,
+.rectangle-div3 {
+  left: 852px;
+}
+.rectangle-div2,
+.rectangle-div3 {
+  left: 488px;
+  opacity: 0.6;
+}
+.rectangle-div3 {
+  left: 1340px;
+}
+.rectangle-div4,
+.rectangle-div5,
+.rectangle-div6,
+.rectangle-div7 {
+  position: absolute;
+  top: 73px;
+  left: 92px;
+  background-color: var(--color-violet-100);
+  width: 93px;
+  height: 93px;
+  opacity: 0.8;
+}
+.rectangle-div5,
+.rectangle-div6,
+.rectangle-div7 {
+  left: 944px;
+}
+.rectangle-div6,
+.rectangle-div7 {
+  top: 88px;
+  left: 381px;
+  opacity: 0.2;
+}
+.rectangle-div7 {
+  left: 1233px;
+}
+.rectangle-div10,
+.rectangle-div11,
+.rectangle-div12,
+.rectangle-div13,
+.rectangle-div8,
+.rectangle-div9 {
+  position: absolute;
+  top: 0;
+  left: 199px;
+  background-color: var(--color-violet-100);
+  width: 93px;
+  height: 93px;
+  opacity: 0.3;
+}
+.rectangle-div10,
+.rectangle-div11,
+.rectangle-div12,
+.rectangle-div13,
+.rectangle-div9 {
+  left: 1051px;
+}
+.rectangle-div10,
+.rectangle-div11,
+.rectangle-div12,
+.rectangle-div13 {
+  top: 47px;
+  left: 580px;
+  opacity: 0.4;
+}
+.rectangle-div11,
+.rectangle-div12,
+.rectangle-div13 {
+  left: 1432px;
+}
+.rectangle-div12,
+.rectangle-div13 {
+  top: 58px;
+  left: 306px;
+  width: 61px;
+  height: 61px;
+  opacity: 0.7;
+}
+.rectangle-div13 {
+  left: 1158px;
+}
+.rectangels-div,
+.rectangle-icon {
+  position: absolute;
+  top: calc(50% - 334px);
+  left: calc(50% - 763px);
+  width: 1525px;
+  height: 181px;
+}
+.rectangle-icon {
+  top: calc(50% - 256px);
+  left: calc(50% - 76px);
+  width: 151px;
+  height: 151px;
+  object-fit: cover;
+}
+.im-div {
+  position: absolute;
+  top: calc(50% - 78px);
+  left: calc(50% - 17px);
+  letter-spacing: -0.05em;
+  display: inline-block;
+}
+.pnar-suszer-b {
+  top: calc(50% - 36px);
+  left: calc(50% - 130px);
+  font-size: 36px;
+  color: #e3e9f6;
+  text-align: left;
+}
+.pnar-suszer-b,
+.ui-designer-div,
+.voyadigital-div {
+  position: absolute;
+  letter-spacing: -0.05em;
+  display: inline-block;
+}
+.ui-designer-div {
+  top: calc(50% - -48px);
+  left: calc(50% - 85.5px);
+  font-size: var(--font-size-lg);
+  color: var(--color-pink);
+}
+.voyadigital-div {
+  top: calc(50% - -89px);
+  left: calc(50% - 72px);
+  color: var(--color-violet-200);
+}
+.and-div {
+  top: calc(50% - -131px);
+  left: calc(50% - 17px);
+}
+.and-div,
+.freelancer-div,
+.pinarsusuzergmailcom {
+  position: absolute;
+  letter-spacing: -0.05em;
+  display: inline-block;
+}
+.freelancer-div {
+  top: calc(50% - -173px);
+  left: calc(50% - 78px);
+  font-size: var(--font-size-lg);
+  color: var(--color-pink);
+}
+.pinarsusuzergmailcom {
+  text-decoration: none;
+  top: calc(50% - -214px);
+  left: calc(50% - 121.5px);
+  color: var(--color-violet-200);
+}
+.pinarsusuzergmailcom:hover {
+  text-shadow: 0 2px 6px rgba(9, 5, 136, 0.6);
+}
+.layer-2-icon,
+.twitter-1-button {
+  position: absolute;
+  overflow: hidden;
+}
+.layer-2-icon {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+.twitter-1-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  bottom: 56px;
+  left: calc(50% - 32px);
+  width: 64px;
+  height: 64px;
+  opacity: 0;
+}
+.twitter-1-button.animate {
+  animation: 1s ease 0s 1 normal forwards fade-in;
+}
+.desktop-1 {
+  position: relative;
+  background-color: #4749bc;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-indigo-100);
+  font-family: var(--font-jetbrains-mono);
+}
